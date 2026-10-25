@@ -1,0 +1,10 @@
+[
+  { "id": "L01", "site": "PhoneBook Demo", "category": "People search", "method": "email", "optOut": "privacy@phonebook-demo.example", "eta": "7-14 days" },
+  { "id": "L02", "site": "QuickLookup Demo", "category": "People search", "method": "form", "optOut": "https://quicklookup-demo.example/optout", "eta": "7 days" },
+  { "id": "L03", "site": "BizListing Demo", "category": "Business directory", "method": "email", "optOut": "support@bizlisting-demo.example", "eta": "10 days" },
+  { "id": "L04", "site": "CallerID Demo", "category": "Caller ID app", "method": "form", "optOut": "https://callerid-demo.example/remove", "eta": "3-5 days" },
+  { "id": "L05", "site": "LeadMarket Demo", "category": "Marketing lead seller", "method": "email", "optOut": "dpo@leadmarket-demo.example", "eta": "14 days" },
+  { "id": "L06", "site": "ClassifiedsHub Demo", "category": "Classifieds", "method": "email", "optOut": "help@classifiedshub-demo.example", "eta": "5 days" },
+  { "id": "L07", "site": "AlumniFinder Demo", "category": "People search", "method": "form", "optOut": "https://alumnifinder-demo.example/privacy", "eta": "7 days" },
+  { "id": "L08", "site": "TradeDirectory Demo", "category": "Business directory", "method": "email", "optOut": "privacy@tradedirectory-demo.example", "eta": "10 days" }
+]

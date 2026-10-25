@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Removal · India</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><span class="tag">DATA REMOVAL · INDIA</span><span id="keyState" class="tag"></span></header>
+<main>
+
+<section id="s1" class="card">
+  <h1>YOUR DATA.<br>EVERYWHERE.</h1>
+  <p class="sub">Find where your phone number is publicly listed and request removal, with your permission.</p>
+  <label>Name <input id="name" autocomplete="name"></label>
+  <label>Phone number <input id="phone" inputmode="tel" placeholder="+91 98765 43210"></label>
+  <label>Email (for removal requests) <input id="email" type="email"></label>
+  <label class="check"><input id="consent" type="checkbox"> I consent to searches and removal requests made on my behalf.</label>
+  <button id="btnRegister" class="primary">CREATE ACCOUNT</button>
+  <p class="err" id="e1"></p>
+</section>
+
+<section id="s2" class="card hidden">
+  <h1 id="scanTitle">SCANNING SUPPORTED<br>PUBLIC LISTINGS.</h1>
+  <div id="scanGrid" class="grid"></div>
+  <p class="foot" id="scanFoot">SEARCHING FOR YOUR PHONE NUMBER</p>
+</section>
+
+<section id="s3" class="card hidden">
+  <h1>PUBLIC EXPOSURE<br>FOUND.</h1>
+  <p class="sub">Select the listings you authorise us to request removal from.</p>
+  <div id="found"></div>
+  <label>Write requests in
+    <select id="lang">
+      <option>English</option><option>Hindi</option><option>Bengali</option><option>Tamil</option>
+      <option>Telugu</option><option>Marathi</option><option>Gujarati</option><option>Kannada</option>
+    </select>
+  </label>
+  <button id="btnAuthorise" class="primary">AUTHORISE REMOVAL</button>
+  <p class="err" id="e3"></p>
+</section>
+
+<section id="s4" class="card hidden">
+  <h1>YOUR PRIVACY<br>DASHBOARD.</h1>
+  <div class="stats">
+    <div><span id="nTracked">00</span><small>TRACKED</small></div>
+    <div><span id="nRemoved">00</span><small>REMOVED</small></div>
+    <div><span id="nPending">00</span><small>PENDING</small></div>
+    <div><span id="nFailed">00</span><small>FAILED</small></div>
+  </div>
+  <div class="bar"><i id="barRemoved"></i><i id="barPending"></i></div>
+  <p class="note">Demo mode: pending requests are marked removed after a few seconds to show the flow. Real brokers typically take 7–14 days.</p>
+  <div id="reqList"></div>
+
+  <h2>DRAFTED REQUESTS</h2>
+  <div id="drafts"></div>
+
+  <h2>TALK TO YOUR PRIVACY ASSISTANT</h2>
+  <p class="sub">Speak in any supported Indian language. Needs your Sarvam key.</p>
+  <button id="btnMic" class="secondary">🎙 HOLD TO SPEAK</button>
+  <div id="voiceOut" class="box hidden"></div>
+  <audio id="player" controls class="hidden"></audio>
+
+  <h2>READ A NOTICE OR REPLY</h2>
+  <p class="sub">Paste an email or SMS from a website. We'll read it and update your tracker.</p>
+  <textarea id="docText" rows="5" placeholder="Paste the message here…"></textarea>
+  <button id="btnDoc" class="secondary">READ DOCUMENT</button>
+  <pre id="docOut" class="box hidden"></pre>
+  <p class="err" id="e4"></p>
+</section>
+
+</main>
+<footer>We can only request removal from public-facing listings. Banks, telecom operators, government and offline records are out of scope.</footer>
+<script src="app.js"></script>
+</body>
+</html>

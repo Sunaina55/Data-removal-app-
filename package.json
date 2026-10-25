@@ -1,0 +1,17 @@
+{
+  "name": "data-removal-app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node --env-file=.env hello-sarvam.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "npm": "^12.2.1",
+    "sarvamai": "^1.1.12",
+    "start": "^5.1.0"
+  },
+  "type": "module"
+}
